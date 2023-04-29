@@ -1,7 +1,19 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
 /* toto je černá magie, na kterou nešahej! */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
 
 /*
 BARVY
@@ -17,5 +29,91 @@ tlačítko twitter          #1da1f2
 
 body {
   background-color: #bdc3c7;
+  padding: 30px;
+  width: 50%;
+  margin: auto;
 }
 
+.profil {
+  background-color: #31363b;
+  padding: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hlavicka {
+  position: relative;
+}
+
+img {
+  width: 100%;
+}
+
+.logo {
+  width: 60px;
+  background-color: #b92e81;
+  border-radius: 50%;
+  box-shadow: 3px 5px 10px rgb(22, 22, 22);
+  position: absolute;
+  bottom: -5%;
+  left: 75%;
+}
+
+.obsah {
+  margin: 30px;
+}
+
+.jmeno {
+  color: white;
+  padding: 10px
+}
+
+p {
+  color: rgb(200, 197, 197);
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 10px
+}
+
+ul {
+  text-align: center;
+}
+
+.portfolio {
+  display: block;
+  border-top: 2px solid #3f464d;
+  border-bottom: 2px solid #3f464d;
+  padding: 20px;
+
+}
+
+.facebook,
+.twitter {
+  margin: -1px 0 0 -1px;
+  display: inline-block;
+  padding: 20px;
+  width: 49%;
+  outline: 2px solid #3f464d;
+}
+
+
+.odkazy a {
+  color: rgb(200, 197, 197);
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.portfolio:hover {
+  background-color: #e74c3c;
+  box-shadow: 3px 5px 10px rgb(42, 42, 42);
+}
+
+.facebook:hover {
+  background-color: #3b5998;
+  box-shadow: 3px 5px 10px rgb(42, 42, 42);
+}
+
+.twitter:hover {
+  background-color: #1da1f2;
+  box-shadow: 3px 5px 10px rgb(42, 42, 42);
+}
